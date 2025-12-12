@@ -7,7 +7,8 @@ public with sharing class AccountController {
     @AuraEnabled(cacheable=true)
     public static Integer getTotalNumber() {
         return [SELECT COUNT() FROM Account WITH USER_MODE];
-        //test
+       
+        //test2 GITPOC2
     }
 
     @AuraEnabled(cacheable=true)
